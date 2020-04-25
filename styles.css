@@ -1,0 +1,141 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background-image: url(./the-honest-company-Ua9AK-pZ5cw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+}
+
+/*----------header section----------*/
+
+header{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+}
+
+.home-logo, .nav-logos{
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-logos a{
+    display: flex;
+    float: both;
+}
+
+
+.home-logo{
+    left: 5%;
+    flex: 1;
+    animation: slide 2s ease;
+}
+
+.home-logo p{
+    font-family: 'Girassol', cursive;
+    float: right;
+    background: linear-gradient(to right, black, #006600 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-logos{
+    flex: 2;
+    justify-content: space-around;
+    animation: drop 2s ease;
+}
+.nav-logos a{
+    background: linear-gradient(to right, #006600, black );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 3px);
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-0px);
+    
+    }     
+}
+
+@keyframes slide2{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-0px);
+    
+    }     
+}
+
+@keyframes slide3{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-0px);
+    
+    }     
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-0px);
+    
+    }     
+}
+
+/*----------main section----------*/
+
+.presentation{
+    margin-top: 290px;
+    padding: 55px;
+    
+}
+
+.presentation h1{
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-size: 47px;
+    background: linear-gradient(to right, black, #006600 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slide 1s ease;
+}
+
+.presentation h2{
+    animation: slide2 2.5s ease;
+}
+
+.presentation p{
+    font-size: 25px;
+    max-width: 800px;
+    margin-top: 25px;
+    animation: slide3 3.7s ease;
+}
+
+
